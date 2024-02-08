@@ -7,7 +7,9 @@ In this section we are going to populate our Elasticsearch cluster with data. Th
 3. [Elastic Agent](https://www.elastic.co/elastic-agent)
 4. [Language clients](https://www.elastic.co/guide/en/elasticsearch/client/index.html) (such as the [Node.js client bulk index example](https://www.elastic.co/guide/en/elasticsearch/client/javascript-api/current/bulk_examples.html))
 
-For ease, in this workshop we shall use the CSV upload capabilities in Kibana to create and populate our index.
+For ease, in this workshop we shall use the CSV upload capabilities in Kibana to create and populate our index. An inverted index is a data structure, much like the index of a book, where key terms are stored alongside a reference to the document in which they reside:
+
+![Inverted Index Generation](../diagrams/inverted-index-example.png)
 
 ## Steps
 
