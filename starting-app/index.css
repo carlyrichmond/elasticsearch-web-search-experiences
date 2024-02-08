@@ -1,0 +1,97 @@
+/*Heading styling*/
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.elastic-logo {
+    width: 10rem;
+    height: auto;
+}
+
+h1 {
+    font-family: "Inter";
+}
+
+.subheading {
+    font-family: "Inter";
+}
+
+label {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*Main section styling*/
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+input {
+    width: 25rem;
+    height: 2rem;
+    border-radius: 5px;
+
+    font-size: 1rem;
+
+    border-style: outset;
+    border-width: 0.01rem;
+    border-color: black;
+}
+
+button {
+    margin: 2rem 0 2rem 0;
+    width: 10rem;
+    height: 3rem;
+    border-radius: 8px;
+
+    font-size: larger;
+
+    background-color: #006BB4;
+    color: #FFFFFF;
+}
+
+.results-container {
+    display: flex;
+    flex-direction: column;
+
+    min-width: 25rem;
+    min-height: 10rem;
+
+    border-style: outset;
+    border-width: 0.15rem;
+    border-color: black;
+    border-radius: 15px;
+}
+
+p#no-results-message {
+    z-index: 0;
+    min-width: 25rem;
+    min-height: 10rem;
+
+    text-align: center;
+    font-family: "Inter";
+
+    padding: 0 1rem 0 1rem;
+}
+
+
+footer {
+    text-align: center;
+    font-family: sans-serif;
+
+    margin-top: 1rem;
+}
