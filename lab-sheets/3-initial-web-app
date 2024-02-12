@@ -138,7 +138,7 @@ app.get("/recommendations", async (req, res) => {
 });
 ```
 
-9. Add an implementation for function `getRecommendations` to query Elasticsearch using the query and language options send from the server:
+9. Add an implementation for function `getRecommendations` to helper `elasticsearch.js` to query Elasticsearch using the query and language options send from the server:
 
 ```js
 async function getRecommendations(titleQuery, language) {
