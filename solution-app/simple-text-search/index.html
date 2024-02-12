@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elastic Movie Database</title>
+    <link rel="icon" type="image/x-icon" href="./public/logo-elastic-glyph-color.svg">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Inter">
+    <link rel="stylesheet" href="./index.css" />
+    <script src="./index.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <img
+        alt="Elastic logo"
+        class="elastic-logo"
+        src="./public/logo-elastic-horizontal-color.svg"/>
+      <h1 aria-label="Movie Database">Movie Database</h1>
+    </header>
+    <main>
+      <div class="container">
+        
+        <p class="subheading">
+          Find movie recommendations with Elasticsearch!
+        </p>
+        
+        <div class="input-controls">
+
+          <div id="search-bar">
+            <label for="query-input">What movies do you like?</label>
+            <input type="text" id="query-input" placeholder="Movies like Amelie" 
+              minlength="2" required>
+          </div>
+          
+            <div id="language-options">
+              <input type="radio" id="all-languages" name="language" value="all" checked>
+              <label for="all-languages">All</label>
+
+              <input type="radio" id="en" name="language" value="en">
+              <label for="en">English</label>
+
+              <input type="radio" id="fr" name="language" value="fr">
+              <label for="fr">French</label>
+
+              <input type="radio" id="ja" name="language" value="ja">
+              <label for="ja">Japanese</label>
+              
+              <input type="radio" id="it" name="language" value="it">
+              <label for="it">Italian</label>
+              
+              <input type="radio" id="es" name="language" value="es">
+              <label for="es">Spanish</label>
+              
+              <input type="radio" id="de" name="language" value="de">
+              <label for="de">German</label>
+              
+              <input type="radio" id="ko" name="language" value="ko">
+              <label for="ko">Korean</label>
+              
+              <input type="radio" id="cn" name="language" value="cn">
+              <label for="cn">Chinese</label>
+              
+              <input type="radio" id="hi" name="language" value="hi">
+              <label for="hi">Hindi</label>
+          </div>
+
+          <button onclick="getRecommendations()">Recommend Movies</button>
+
+        </div>
+
+        <div id="results-container">
+          <p id="no-results-message">No recommendations yet...</p>
+        </div>
+    </main>
+  </body>
+  <footer>
+    Made by Carly Richmond
+    <span aria-label="avocado" role="img">&#x1f951;</span>
+    with
+    <span aria-label="heart" role="img">&#x1F49C;</span>
+    and
+    <span aria-label="tea" role="img">&#x1f375;</span>
+  </footer>
+</html>
