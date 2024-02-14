@@ -8,11 +8,11 @@ In lab 2 we shall perform some simple queries and aggregations to investigate th
 
 1. Navigate to the *Dev Tools* either via the hamburger menu or using the search bar at the top of the page:
 
-![Kibana menu Dev Tools option](./screenshots/lab-2-dev-tools-menu.png)
+![Kibana menu Dev Tools option](./screenshots/2/lab-2-dev-tools-menu.png)
 
 You will see a screen with a console panel on the left and an empty results pane, a bit like the below:
 
-![Kibana Dev Tools screen](./screenshots/lab-2-dev-tools-screen.png)
+![Kibana Dev Tools screen](./screenshots/2/lab-2-dev-tools-screen.png)
 
 2. Check out the mapping of your resulting index to see the field data types:
 
@@ -80,4 +80,4 @@ GET movies-carly-richmond/_search
 
 With each query you should be able to see results in the output panel on the right of the Dev Tools screen:
 
-![Kibana Dev Tools Screen with `_mapping` result](./screenshots/lab-2-dev-tools-mapping-output-example.png)
+![Kibana Dev Tools Screen with `_mapping` result](./screenshots/2/lab-2-dev-tools-mapping-output-example.png)

@@ -4,7 +4,7 @@ In this lab we shall use the [Elasticsearch JavaScript client](https://www.elast
 
 The initial skeleton application is page with a title and placeholder text:
 
-![Simple web application in browser](./screenshots/lab-3-skeleton-application.png)
+![Simple web application in browser](./screenshots/3/lab-3-skeleton-application.png)
 
 In this section we shall add controls for users to input terms, and then use their inputs to return relevant documents from our Elasticsearch cluster.
 
@@ -96,11 +96,11 @@ set ELASTIC_API_KEY=MY-API-KEY
 
 If you are using your own cluster the cloud ID is available in the Cloud management cluster:
 
-![Elastic Cloud Console](./screenshots/lab-3-cloud-console.png)
+![Elastic Cloud Console](./screenshots/3/lab-3-cloud-console.png)
 
 To create an API Key use the *Create API key* feature under *Stack Management:
 
-![Elastic Stack Management Create API key](./screenshots/lab-3-create-api-keys.png)
+![Elastic Stack Management Create API key](./screenshots/3/lab-3-create-api-keys.png)
 
 7. In `elasticsearch.js` add the below details to establish a client connection using your defined environment variables, and the index you used previously in place of `movies-carly-richmond`:
 
@@ -215,4 +215,4 @@ async function getRecommendations() {
 
 Once you restart the server using `npm run start`, if all has gone well we shall have a web application that returns movie results:
 
-![Elastic Movie Recommendations Screenshot](./screenshots/lab-3-simple-recommendations-app.png)
+![Elastic Movie Recommendations Screenshot](./screenshots/3/lab-3-simple-recommendations-app.png)

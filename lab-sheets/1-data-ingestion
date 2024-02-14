@@ -39,6 +39,6 @@ Alternatively, please use the [provided CSV in the `data` folder](../data/TMDb_u
 
 If all goes well you should see that the import is successful and the index, ingest pipeline and data view have been successfully created:
 
-![Successful ingestion Kibana screenshot](./screenshots/lab-1-success-screenshot.png)
+![Successful ingestion Kibana screenshot](./screenshots/1/lab-1-success-screenshot.png)
 
 Please contact the facilitator if you see any failure messages.
