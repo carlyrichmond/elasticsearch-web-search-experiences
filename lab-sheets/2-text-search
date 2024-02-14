@@ -2,9 +2,17 @@
 
 In lab 2 we shall perform some simple queries and aggregations to investigate the data we ingested in [lab 1](./1-data-ingestion). 
 
-*Please ensure you use the index `movies-<your-first-name>-<your-last-name>` for each query below. The example queries make use of the facilitators index `movies-carly-richmond`*.
+## What is Lexical Search?
+
+[Lexical search, or text search](https://www.elastic.co/search-labs/blog/articles/lexical-and-semantic-search-with-elasticsearch#lexical-search---sparse-retrieval), is the classic way of searching documents. It looks for exact term matches within a document using a structure known as an inverted index:
+
+![Inverted Index Generation](../diagrams/inverted-index-example.png)
+
+This means that the document will only be returned for a query if it contains the exact terms. Conversely, this means that if we use a different term meaning the same thing, a relevant document may not be returned. There are some mechanisms available to address this such as synonym expansion, but they need to me configured and maintained manually.
 
 ## Steps
+
+*Please ensure you use the index `movies-<your-first-name>-<your-last-name>` for each query below. The example queries make use of the facilitators index `movies-carly-richmond`.*
 
 1. Navigate to the *Dev Tools* either via the hamburger menu or using the search bar at the top of the page:
 
