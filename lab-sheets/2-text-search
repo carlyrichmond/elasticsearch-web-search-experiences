@@ -51,7 +51,7 @@ GET movies-carly-richmond/_search
   "size": 37, 
   "query": {
     "match": {
-      "title": "star"
+      "title": "cold"
     }
   }
 }
@@ -67,7 +67,7 @@ GET movies-carly-richmond/_search
       "must": [
         {
           "match": {
-            "title": "star"
+            "title": "cold"
           }
         }
       ],

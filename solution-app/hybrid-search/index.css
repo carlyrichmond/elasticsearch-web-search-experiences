@@ -1,0 +1,160 @@
+/*Heading styling*/
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.elastic-logo {
+    width: 10rem;
+    height: auto;
+}
+
+h1 {
+    font-family: "Inter";
+}
+
+.subheading {
+    font-family: "Inter";
+}
+
+label {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*Main section styling*/
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+input[type="text"] {
+    width: 25rem;
+    height: 2rem;
+    border-radius: 5px;
+
+    font-size: 1rem;
+
+    border-style: outset;
+    border-width: 0.01rem;
+    border-color: black;
+
+    padding-left: 0.5rem;
+}
+
+#search-bar {
+    display: flex !important;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+#language-options {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+button {
+    margin: 2rem 0 2rem 0;
+    width: 10rem;
+    height: 3rem;
+    border-radius: 8px;
+
+    font-size: larger;
+
+    background-color: #006BB4;
+    color: #FFFFFF;
+}
+
+/*Results section styling*/
+
+#results-container {
+    display: flex;
+    flex-direction: column;
+
+    min-width: 25rem;
+    min-height: 10rem;
+
+    border-style: outset;
+    border-width: 0.15rem;
+    border-color: black;
+
+    padding: 1rem;
+}
+
+h2 {
+    font-family: "Inter";
+    margin: 1rem;
+}
+
+p#no-results-message {
+    z-index: 0;
+    min-width: 25rem;
+    min-height: 10rem;
+
+    text-align: center;
+    font-family: "Inter";
+
+    padding: 0 1rem 0 1rem;
+}
+
+/*Individual recommendation styling*/
+
+.movie-container {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+
+    box-shadow: 1px 4px 8px 0 grey;
+    transition: 0.3s;
+
+    margin: 0.5rem 1rem;
+    padding: 1rem 1.5rem;
+}
+
+.movie-container:hover {
+    box-shadow: 1px 8px 16px 0 grey;
+}
+
+.movie-title {
+    font-family: "Inter";
+    font-weight: bold;
+    font-size: larger;
+}
+
+div.movie-metadata {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: grey;
+}
+
+.movie-overview {
+    font-family:'Inter';
+    text-align: justify;
+    text-overflow: ellipsis;
+}
+
+footer {
+    text-align: center;
+    font-family: sans-serif;
+
+    margin-top: 1rem;
+}

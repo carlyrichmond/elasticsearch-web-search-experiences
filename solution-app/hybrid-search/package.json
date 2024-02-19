@@ -1,0 +1,33 @@
+{
+  "name": "elasticsearch-web-search",
+  "version": "1.0.0",
+  "description": "Sample web application for workshop \"Building Search Experiences on the Web with Elasticsearch\"",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carlyrichmond/elasticsearch-web-search-experiences.git"
+  },
+  "keywords": [
+    "Elasticsearch",
+    "JavaScript",
+    "Web",
+    "Development"
+  ],
+  "author": "Carly Richmond",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/carlyrichmond/elasticsearch-web-search-experiences/issues"
+  },
+  "homepage": "https://github.com/carlyrichmond/elasticsearch-web-search-experiences#readme",
+  "dependencies": {
+    "@elastic/elasticsearch": "^8.12.1",
+    "@langchain/openai": "^0.0.14",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "path": "^0.12.7"
+  }
+}
