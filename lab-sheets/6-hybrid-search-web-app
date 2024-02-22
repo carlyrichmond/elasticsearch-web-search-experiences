@@ -6,6 +6,8 @@ In this final lab we'll explore how to combine lexical and semantic search, and 
 
 ## Steps
 
+### Elasticsearch DevTool Queries
+
 1. Using the Elastic DevTools, let's build a combined query using the traditional lexical and modern vector queries we've used in our prior labs:
 
 ```json
@@ -123,6 +125,8 @@ GET vector-movies-carly-richmond/_search
 ```
 
 How do our results compare to the manual boosting approach discussed previously?
+
+### Web Application with Elasticsearch Client
 
 5. Going back to our web application, amend the query in `elasticsearch.js` to use a hybrid vector and lexical query by changing the index and client query code to include the `knn` and `rank` options used in the prior hybrid query:
 
