@@ -43,7 +43,7 @@ PUT vector-movies-carly-richmond
 {
   "mappings": {
     "properties": {
-      "text_embedding.predicted_value": {
+      "embedding": {
         "type": "dense_vector",
         "dims": 384
       }
@@ -87,7 +87,7 @@ POST _reindex
 }
 ```
 
-5. Check index `vector-movies-<your-first-name>-<your-last-name>` contains documents including field `text_embedding.predicted_value`:
+5. Check index `vector-movies-<your-first-name>-<your-last-name>` contains documents including field `embedding`:
 
 ```json
 GET vector-movies-carly-richmond/_search
@@ -106,29 +106,26 @@ GET movies-carly-richmond/_search
 If all goes well you will have a new index `vector-movies-<your-first-name>-<your-last-name>` containing a set of movies enriched with a dense vector field similar to the below:
 
 ```json
- {
-    "_index": "vector-movies-carly-richmond",
-    "_id": "szJff40BMj9C_ao6W0IZ",
-    "_score": 13.527653,
-    "_ignored": [
-        "overview.keyword"
+{
+  "_index": "vector-movies-carly-richmond",
+  "_id": "HDJff40BMj9C_ao6YmAM",
+  "_score": 0.59750485,
+  "_ignored": [
+    "overview.keyword"
+  ],
+  "_source": {
+    "overview": "HA Yoon-ju becomes the newest member to a unit within the Korean Police Forces Special Crime Department that specializes in surveillance activities on high profile criminals. She teams up with HWANG Sang-Jun, the veteran leader of the unit, and tries to track down James who is the cold-hearted leader of an armed criminal organization.",
+    "original_language": "ko",
+    "vote_average": 7.4,
+    "id": 7593,
+    "embedding": [
+          -0.07696302980184555,
+          0.32373741269111633,
+          ...
         ],
-    "_source": {
-        "overview": "Princess Leia is captured and held hostage by the evil Imperial forces in their effort to take over the galactic Empire. Venturesome Luke Skywalker and dashing captain Han Solo team together with the loveable robot duo R2-D2 and C-3PO to rescue the beautiful princess and restore peace and justice in the Empire.",
-        "text_embedding": {
-            "predicted_value": [
-              -0.05596492066979408,
-              0.10419969260692596,
-              -0.1282072812318802,
-              ...
-            ],
-            "model_id": "sentence-transformers__msmarco-minilm-l-12-v3"
-          },
-          "original_language": "en",
-          "vote_average": 8.2,
-          "id": 64,
-          "title": "Star Wars",
-          "vote_count": 13223
-    }
+    "model_id": "sentence-transformers__msmarco-minilm-l-12-v3",
+    "title": "Cold Eyes",
+    "vote_count": 107
+  }
 }
 ```

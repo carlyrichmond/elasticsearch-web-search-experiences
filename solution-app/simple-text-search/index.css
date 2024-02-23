@@ -112,6 +112,40 @@ p#no-results-message {
     padding: 0 1rem 0 1rem;
 }
 
+/*Featured review*/
+
+#featured-container {
+    display: flex;
+    flex-direction: column;
+    min-width: 26rem;
+    height: fit-content;
+
+    box-shadow: 1px 4px 8px 0 #006BB4;
+    transition: 0.3s;
+
+    margin: 0.5rem 1rem 2rem 0.5rem;
+    padding: 1rem 1.5rem;
+}
+
+#featured-container:hover {
+    box-shadow: 1px 8px 16px 0 #006BB4;
+}
+
+img.heart-logo {
+    width: 1.5rem;
+    height: auto;
+}
+
+.featured-heading {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+#review-content {
+    font-family: "Inter";
+}
+
 /*Individual recommendation styling*/
 
 .movie-container {
