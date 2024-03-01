@@ -6,9 +6,13 @@ This repo contains the content and solution for the workshop [Building Search Ex
 
 Together we shall build a simple web application making use of simple text search, and then extend it to use vector search and generate a synopsis for recommended movies:
 
-![Final vector search web application](./diagrams/)
+![Final vector search web application](./lab-sheets/screenshots/3/lab-3-simple-recommendations-app.png)
 
 The final architecture consists of a UI written in JavaScript, HTML and CSS communicating with a simple Express.js server that interacts with Elasticsearch. 
+
+There is also an extension to add response generation using an OpenAI LLM:
+
+![Final RAG application](./lab-sheets/screenshots/7/rag-web-app-screenshot.png)
 
 ## How to run
 
