@@ -26,7 +26,7 @@ Opening `http://localhost:3000` in your favourite browser should present you wit
 <div class="input-controls">
     <div id="search-bar">
         <label for="query-input">What movies do you like?</label>
-        <input type="text" id="subject-input" placeholder="Movies like Amelie" minlength="2" required>
+        <input type="text" id="query-input" placeholder="Movies like Amelie" minlength="2" required>
     </div>
           
     <div id="language-options">
@@ -118,6 +118,8 @@ const client = new elasticsearch.Client({
 8. Add new endpoint `/recommendations` to our Express.js server in `server.js` to get results from Elasticsearch matching our user query:
 
 ```js
+const { getRecommendations } = require("./elasticsearch");
+
 app.get("/recommendations", async (req, res) => {
   const titleQuery = req.query.query ? decodeURIComponent(req.query.query): '';
   const language = req.query.language !== 'all' ? decodeURIComponent(req.query.language): '';
@@ -169,7 +171,7 @@ async function getRecommendations(titleQuery, language) {
 }
 ```
 
-10. Amend function `getRecommendations` in `index.js` to add the results to HTML element `.results-container`:
+10. Amend function `getRecommendations` in `index.js` to add the results to HTML element `#results-container`:
 
 ```js
 async function getRecommendations() {

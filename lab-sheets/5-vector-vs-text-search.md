@@ -31,28 +31,13 @@ GET movies-carly-richmond/_search
 }
 ```
 
-2. Perform the same query on our vector index:
-
-```json
-GET vector-movies-carly-richmond/_search
-{
-  "query": {
-    "match": {
-      "overview": "Films to make me laugh"
-    }
-  }
-}
-```
-
-Do these results match those of step 1?
-
-3. Use a [kNN query](https://www.elastic.co/guide/en/elasticsearch/reference/8.12/query-dsl-knn-query.html) to find the 10 closest results to the query `Films to make me laugh` evaluating 100 candidates per shard:
+2. Use a [kNN query](https://www.elastic.co/guide/en/elasticsearch/reference/8.12/query-dsl-knn-query.html) to find the 10 closest results to the query `Films to make me laugh` evaluating 100 candidates per shard:
 
 ```json
 GET vector-movies-carly-richmond/_search
 {
   "knn": {
-    "field": "text_embedding.predicted_value",
+    "field": "embedding",
     "k": 10,
     "num_candidates": 100,
     "query_vector_builder": {

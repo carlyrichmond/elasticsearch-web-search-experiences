@@ -19,7 +19,7 @@ GET vector-movies-carly-richmond/_search
         }
     },
     "knn": {
-        "field": "text_embedding.predicted_value",
+        "field": "embedding",
         "k": 10,
         "num_candidates": 1000,
         "query_vector_builder": {
@@ -48,7 +48,7 @@ GET vector-movies-carly-richmond/_search
         }
     },
     "knn": {
-        "field": "text_embedding.predicted_value",
+        "field": "embedding",
         "k": 10,
         "num_candidates": 1000,
         "query_vector_builder": {
@@ -78,7 +78,7 @@ GET vector-movies-carly-richmond/_search
         }
     },
     "knn": {
-        "field": "text_embedding.predicted_value",
+        "field": "embedding",
         "k": 10,
         "num_candidates": 1000,
         "query_vector_builder": {
@@ -107,7 +107,7 @@ GET vector-movies-carly-richmond/_search
         }
     },
     "knn": {
-        "field": "text_embedding.predicted_value",
+        "field": "embedding",
         "k": 10,
         "num_candidates": 1000,
         "query_vector_builder": {
@@ -153,7 +153,7 @@ async function getRecommendations(titleQuery, language) {
       },
     },
     knn: {
-      field: "text_embedding.predicted_value",
+      field: "embedding",
       k: 10,
       num_candidates: 1000,
       query_vector_builder: {

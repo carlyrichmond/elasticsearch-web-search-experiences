@@ -77,8 +77,7 @@ GET movies-carly-richmond/_search
             "original_language": "en"
           }
         }
-      ],
-      "minimum_should_match": 2
+      ]
     }
   }
 }
