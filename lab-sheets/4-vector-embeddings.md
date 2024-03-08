@@ -93,7 +93,7 @@ POST _reindex
 GET vector-movies-carly-richmond/_search
 ```
 
-6. Investigate the index mapping and compare to the original index `movies-<your-first-name>-<your-last-name>`. What is the data type of field `overview`?
+6. Investigate the index mapping and compare to the original index `movies-<your-first-name>-<your-last-name>`. What is the data type of field `embedding`?
 
 ```json
 GET vector-movies-carly-richmond/_mapping

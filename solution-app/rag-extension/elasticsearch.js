@@ -59,8 +59,8 @@ async function getRecommendations(titleQuery, language) {
   const documents = await getDocumentsForQuery(titleQuery, language);
 
   // Create prompt template
-  const template =
-    "Create a movie review containing '${titleQuery}' of the following movie synopsis: {context}";
+  let template =
+    "Create a movie review containing '{titleQuery}' of the following movie synopsis: {context}";
 
   if (language) {
     template = template + " in language {language}";

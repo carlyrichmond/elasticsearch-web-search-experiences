@@ -46,7 +46,7 @@ To help you get started, a very simple web application is included in this repos
 ```bash
 cd starting-app
 npm install
-node server
+npm run start
 ```
 
 Please ensure that you are present in the top-level folder for this project when you start. These steps should be the same for Windows and Mac.

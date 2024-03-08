@@ -21,7 +21,7 @@ Vector search is the fundamental algorithm that underpins semantic search, which
 1. Perform a simple [match query](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-match-query.html) for `Films to make me laugh`. Look at the first few results and try to find the terms that match. 
 
 ```json
-GET movies-carly-richmond/_search
+GET vector-movies-carly-richmond/_search
 {
   "query": {
     "match": {

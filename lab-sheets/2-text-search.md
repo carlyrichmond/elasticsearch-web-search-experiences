@@ -57,7 +57,7 @@ GET movies-carly-richmond/_search
 }
 ```
 
-5. Find the films that contain the term *star* whose original language was not English (hint: use a [`bool` query](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-bool-query.html)):
+5. Find the films that contain the term *cold* whose original language was not English (hint: use a [`bool` query](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-bool-query.html)):
 
 ```json
 GET movies-carly-richmond/_search
